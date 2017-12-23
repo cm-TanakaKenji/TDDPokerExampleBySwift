@@ -13,6 +13,8 @@ import Nimble
 
 class PlayingCardsSpec: QuickSpec {
     override func spec() {
-        
+        describe("課題: トランプ") {
+            
+        }
     }
 }
