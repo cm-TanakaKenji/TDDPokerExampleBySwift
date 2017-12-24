@@ -22,6 +22,15 @@ class PlayingCardsSpec: QuickSpec {
                     expect(card.rank).to(equal(Card.Rank.j))
                 }
             }
+            
+            context("Suitをスペード, Rankをクイーンでカードを作成した場合") {
+                it("Cardのインスタンスが持つsuitが.spadeで、rankが.qであること") {
+                    let card = Card(suit: .spade, rank: .q)
+                    
+                    expect(card.suit).to(equal(Card.Suit.spade))
+                    expect(card.rank).to(equal(Card.Rank.q))
+                }
+            }
         }
     }
 }
