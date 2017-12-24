@@ -14,7 +14,14 @@ import Nimble
 class PlayingCardsSpec: QuickSpec {
     override func spec() {
         describe("課題: トランプ") {
-            
+            context("Suitをハート, Rankをジャックでカードを作成した場合") {
+                it("Cardのインスタンスが持つsuitが.heartで、rankが.jであること") {
+                    let card = Card(suit: .heart, rank: .j)
+                    
+                    expect(card.suit).to(equal(Card.Suit.heart))
+                    expect(card.rank).to(equal(Card.Rank.j))
+                }
+            }
         }
     }
 }
