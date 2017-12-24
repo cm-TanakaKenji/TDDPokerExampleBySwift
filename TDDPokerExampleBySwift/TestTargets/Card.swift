@@ -30,8 +30,11 @@ struct Card {
         case k
     }
     
-    let suit: Suit = .heart
-    let rank: Rank = .j
+    let suit: Suit
+    let rank: Rank
     
-    init(suit: Suit, rank: Rank) {}
+    init(suit: Suit, rank: Rank) {
+        self.suit = suit
+        self.rank = rank
+    }
 }
