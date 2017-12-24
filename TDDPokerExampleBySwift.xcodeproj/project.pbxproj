@@ -15,6 +15,7 @@
 		95F302CF1FEE8A7900BB3EE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95F302CE1FEE8A7900BB3EE6 /* Assets.xcassets */; };
 		95F302D21FEE8A7900BB3EE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95F302D01FEE8A7900BB3EE6 /* LaunchScreen.storyboard */; };
 		95F302E91FEE8C8200BB3EE6 /* PlayingCardsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F302E81FEE8C8200BB3EE6 /* PlayingCardsSpec.swift */; };
+		95F302EB1FEEA15300BB3EE6 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F302EA1FEEA15300BB3EE6 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		95F302D81FEE8A7A00BB3EE6 /* TDDPokerExampleBySwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDPokerExampleBySwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F302DE1FEE8A7A00BB3EE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95F302E81FEE8C8200BB3EE6 /* PlayingCardsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardsSpec.swift; sourceTree = "<group>"; };
+		95F302EA1FEEA15300BB3EE6 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		A084E284FDC0783F42C7C77C /* Pods-TDDPokerExampleBySwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDDPokerExampleBySwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-TDDPokerExampleBySwift/Pods-TDDPokerExampleBySwift.release.xcconfig"; sourceTree = "<group>"; };
 		AB50EA1BC68C00BF3BC58B63 /* Pods-TDDPokerExampleBySwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDDPokerExampleBySwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TDDPokerExampleBySwift/Pods-TDDPokerExampleBySwift.debug.xcconfig"; sourceTree = "<group>"; };
 		CB9A5C9F929E6C3537272063 /* Pods-TDDPokerExampleBySwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDDPokerExampleBySwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TDDPokerExampleBySwiftTests/Pods-TDDPokerExampleBySwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 		95F302E71FEE8C5200BB3EE6 /* TestTargets */ = {
 			isa = PBXGroup;
 			children = (
+				95F302EA1FEEA15300BB3EE6 /* Card.swift */,
 			);
 			path = TestTargets;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95F302CA1FEE8A7900BB3EE6 /* ViewController.swift in Sources */,
+				95F302EB1FEEA15300BB3EE6 /* Card.swift in Sources */,
 				95F302C81FEE8A7900BB3EE6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
