@@ -15,20 +15,20 @@ class PlayingCardsSpec: QuickSpec {
     override func spec() {
         describe("課題: トランプ") {
             context("Suitをハート, Rankをジャックでカードを作成した場合") {
-                it("Cardのインスタンスが持つsuitが.heartで、rankが.jであること") {
-                    let card = Card(suit: .heart, rank: .j)
+                it("Cardのインスタンスが持つsuitが.heartで、rankが.jackであること") {
+                    let card = Card(suit: .heart, rank: .jack)
                     
                     expect(card.suit).to(equal(Card.Suit.heart))
-                    expect(card.rank).to(equal(Card.Rank.j))
+                    expect(card.rank).to(equal(Card.Rank.jack))
                 }
             }
             
             context("Suitをスペード, Rankをクイーンでカードを作成した場合") {
-                it("Cardのインスタンスが持つsuitが.spadeで、rankが.qであること") {
-                    let card = Card(suit: .spade, rank: .q)
+                it("Cardのインスタンスが持つsuitが.spadeで、rankが.queenであること") {
+                    let card = Card(suit: .spade, rank: .queen)
                     
                     expect(card.suit).to(equal(Card.Suit.spade))
-                    expect(card.rank).to(equal(Card.Rank.q))
+                    expect(card.rank).to(equal(Card.Rank.queen))
                 }
             }
         }

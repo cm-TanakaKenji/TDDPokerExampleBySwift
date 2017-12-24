@@ -15,7 +15,7 @@ struct Card {
     }
     
     enum Rank {
-        case one
+        case ace
         case two
         case three
         case four
@@ -25,9 +25,9 @@ struct Card {
         case eight
         case nine
         case ten
-        case j
-        case q
-        case k
+        case jack
+        case queen
+        case king
     }
     
     let suit: Suit
