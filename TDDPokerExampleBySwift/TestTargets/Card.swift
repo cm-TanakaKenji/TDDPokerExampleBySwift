@@ -7,13 +7,6 @@
 //
 
 struct Card {
-    enum Suit: String {
-        case spade = "♠"
-        case heart = "♥"
-        case club = "♣"
-        case diamond = "♦︎"
-    }
-    
     enum Rank: String {
         case ace = "A"
         case two = "2"
@@ -28,6 +21,13 @@ struct Card {
         case jack = "J"
         case queen = "Q"
         case king = "K"
+    }
+    
+    enum Suit: String {
+        case spade = "♠"
+        case heart = "♥"
+        case club = "♣"
+        case diamond = "♦︎"
     }
     
     let rank: Rank
