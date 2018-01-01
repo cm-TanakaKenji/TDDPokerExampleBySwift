@@ -25,16 +25,16 @@ class PlayingCardsSpec: QuickSpec {
             
             context("Suitをスペード, Rankをクイーンでカードを作成した場合") {
                 it("Cardのインスタンスが持つsuitが.spadeで、rankが.queenであること") {
-                    let card = Card(suit: .spade, rank: .queen)
+                    let card = Card(rank: .queen, suit: .spade)
                     
-                    expect(card.suit).to(equal(Card.Suit.spade))
                     expect(card.rank).to(equal(Card.Rank.queen))
+                    expect(card.suit).to(equal(Card.Suit.spade))
                 }
             }
             
             context("Suitをハート, Rankをジャックでカードを作成した場合") {
                 it("文字列表記'J♥'が取得できること") {
-                    let jackOfHearts = Card(suit: .heart, rank: .jack)
+                    let jackOfHearts = Card(rank: .jack, suit: .heart)
                     
                     expect(jackOfHearts.notation).to(equal("J♥"))
                 }
@@ -42,7 +42,7 @@ class PlayingCardsSpec: QuickSpec {
             
             context("Suitをスペード, Rankをクイーンでカードを作成した場合") {
                 it("文字列表記'Q♠'が取得できること") {
-                    let queenOfSpades = Card(suit: .spade, rank: .queen)
+                    let queenOfSpades = Card(rank: .queen, suit: .spade)
                     
                     expect(queenOfSpades.notation).to(equal("Q♠"))
                 }
