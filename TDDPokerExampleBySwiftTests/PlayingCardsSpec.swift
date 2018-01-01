@@ -31,6 +31,14 @@ class PlayingCardsSpec: QuickSpec {
                     expect(card.rank).to(equal(Card.Rank.queen))
                 }
             }
+            
+            context("Suitをハート, Rankをジャックでカードを作成した場合") {
+                it("文字列表記'J♥'が取得できること") {
+                    let jackOfHearts = Card(suit: .heart, rank: .jack)
+                    
+                    expect(jackOfHearts.notation).to(equal("J♥"))
+                }
+            }
         }
     }
 }
