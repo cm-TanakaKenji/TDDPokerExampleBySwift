@@ -16,10 +16,10 @@ class PlayingCardsSpec: QuickSpec {
         describe("課題: トランプ") {
             context("Suitをハート, Rankをジャックでカードを作成した場合") {
                 it("Cardのインスタンスが持つsuitが.heartで、rankが.jackであること") {
-                    let card = Card(suit: .heart, rank: .jack)
+                    let card = Card(rank: .jack, suit: .heart)
                     
-                    expect(card.suit).to(equal(Card.Suit.heart))
                     expect(card.rank).to(equal(Card.Rank.jack))
+                    expect(card.suit).to(equal(Card.Suit.heart))
                 }
             }
             
