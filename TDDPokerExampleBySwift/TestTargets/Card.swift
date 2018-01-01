@@ -34,6 +34,6 @@ struct Card {
     let rank: Rank
     
     var notation: String {
-        return "J♥"
+        return "\(rank.rawValue)\(suit.rawValue)"
     }
 }
